@@ -21,7 +21,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-## Clonnage du projet 
+## Clônage du projet 
 ```bash
 git clone http://192.168.100.232/grp_sio2/grp_labo_slam/inscriptions_lyon_palmes.git
 ```
@@ -31,11 +31,11 @@ git clone http://192.168.100.232/grp_sio2/grp_labo_slam/inscriptions_lyon_palmes
 cd inscriptions_lyon_palmes/
 cd lyon_palme/
 ```
-## Récuperation packages nécessaires :
+## Récupération packages nécessaires :
 ```bash
 pip install -r requirements.txt
 ```
-## Caractéristique du premier incrément :
+## Caractéristiques du premier incrément :
 - BDD Fonctionnelle
 - Chiffrage des données
 - CSS dans le thème de Lyonpalme
@@ -44,6 +44,14 @@ pip install -r requirements.txt
 - Formulaire d'inscription
 - Regex 
 ---
+
+## Caractéristiques du deuxième incrément :
+- Ajout page de connexion des secrétaires
+- Ajout page d'accueil des secrétaires
+- Ajout formulaire de changements de mots de passe avec gestion d'erreur
+- Ajout lien d'inscription des adhérents
+---
+
 ## Merci 
 L'équipe constituée de Yasser, Tom, Milan et Valentin, vous remercie pour le temps que vous avez pu accorder à la lecture de notre README.
 🙏🙏🙏
