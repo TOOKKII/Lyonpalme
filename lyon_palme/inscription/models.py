@@ -15,6 +15,8 @@ class Inscription(models.Model):
     date_inscription = encrypt(models.DateTimeField(max_length=50))
     fiche_inscription = encrypt(models.ImageField(null=True))#(upload_to='tkt'))
     certificat_medical = encrypt(models.ImageField(null=True))#(upload_to='tkt2'))
+    trombinoscope = encrypt(models.BooleanField(default=False, blank=True))
+    annuaire = encrypt(models.BooleanField(default=False, blank=True))
     date_certificat = encrypt(models.DateTimeField(max_length=50, null=True))
     autorisation_parentale = encrypt(models.ImageField(null=True))#(upload_to='tkt3'))
     photo = encrypt(models.ImageField(null=True))#(upload_to='tkt4'))

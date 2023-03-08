@@ -22,6 +22,15 @@ def inscription_form(request):
             adherent.adresse = request.POST['adresse']
             adherent.date_inscription = timezone.now()
             adherent.date_certificat = request.POST['date_certificat']
+            if request.POST['trombinoscope'] == "on":
+                adherent.trombinoscope = True
+            else:
+                adherent.trombinoscope = False
+                
+            if request.POST['annuaire'] == "on":
+                adherent.annuaire = True
+            else:
+                adherent.annuaire = False
             adherent.save()
             return render(request, 'inscription/inscription_form.html', {'form' : form, 'reussi' : reussi})
         else:
